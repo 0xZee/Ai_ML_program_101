@@ -1,0 +1,11 @@
+Program to train and predict Toxic and Non-Toxic Plants (based on leafs mesures [X] (2 Dim Array/Features)
+
+Linear Neural Network : input layer (2 features [X]), 0 hidden layers, 1 output layer (True/False)
+
+input is (X,y)
+init(X) : Initiate W and b parameters. -> (X1.W1 + X2.W2) + b to compare with y later
+MODEL and TRAIN : Do in loop :
+Model_NN(X, W, b) : the linear function and (A) activation fct
+Cost(A, y) : Cost/Loss Fct : compare A to output y
+Gradient(A,X,y) : calculate the Descend Gradients : dW , db
+Update(W, b, dW, db) : update the new (W, b) values with Gradients output
